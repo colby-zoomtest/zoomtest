@@ -1,0 +1,71 @@
+<Document>
+  <Invoice>
+    <Supplier>
+      <Name>Test Supplier</Name>
+      <Number>10000</Number>
+    </Supplier>
+    <Fields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Field Name="Debit/Credit" Type="invoicecredit">Debit</Field>
+      <Field Name="Fakturanummer" Type="invoicenumber">100000</Field>
+      <Field Name="Fakturadatum" Type="invoicedate">20140401</Field>
+      <Field Name="Förfallodatum" Type="invoiceduedate">20140701</Field>
+      <Field Name="Nettobelopp" Type="invoicetotalvatexcludedamount">87.80</Field>
+      <Field Name="Momssats" Type="invoicetotalvatratepercent">25.00</Field>
+      <Field Name="Momsbelopp" Type="invoicetotalvatamount">21.95</Field>
+      <Field Name="Bruttobelopp" Type="invoicetotalvatincludedamount">110.00</Field>
+      <Field Name="Valuta" Type="invoicecurrency">SEK</Field>
+      <Field Name="Plusgiro" Type="supplieraccountnumber1">12345678</Field>
+      <Field Name="Bankgiro" Type="supplieraccountnumber2">12345678</Field>
+      <Field Name="Organisationsnummer" Type="suppliervatregistrationnumber">12345678</Field>
+      <Field Name="ErReferens" Type="buyercontactpersonname">Erik</Field>
+      <Field Name="OCRnummer" Type="paymentreferencenumber">12345678</Field>
+      <Field Name="Bankkonto" Type="supplieraccountnumber3">12345678</Field>
+      <Field Name="Debit/Credit" Type="invoicecredit">false</Field>
+      <Field Name="InvoiceNumber" Type="invoicenumber">103001</Field>
+      <Field Name="InvoiceDate" Type="invoicedate">20190904</Field>
+      <Field Name="DeliveryNote" Type="deliverynote">D2015_01_01</Field>
+      <Field Name="NetValue" Type="invoicetotalvatexcludedamount">219.33</Field>
+      <Field Name="VATRate" Type="invoicetotalvatratepercent">20%</Field>
+      <Field Name="VATValue" Type="invoicetotalvatamount">209.36</Field>
+      <Field Name="DeliveryCost" Type="deliverycost">562.57</Field>
+      <Field Name="GrossValue" Type="invoicetotalvatincludedamount">174.51</Field>
+      <Field Name="Currency" Type="invoicecurrency">SEK</Field>
+      <Field Name="VATReg" Type="suppliervatregistrationnumber">SE987654321901</Field>
+      <Field Name="OrderNumber" Type="invoiceordernumber"></Field>
+      <Field Name="DueDate" Type="invoiceduedate">20190904</Field>
+      <Field Name="Text" Type="header_text"></Field>
+      <Field Name="Discount" Type="invoicediscountamount">690.56</Field>
+    </Fields>
+    <Tables>
+      <Table Type="LineItem">
+        <TableRow>
+          <Field Name="LI_OrderLine" Type="lit_rowidentifier">1</Field>
+          <Field Name="LI_OrderNumber" Type="lit_ordernumber">PO8876</Field>
+          <Field Name="LI_ProductCode" Type="lit_articleidentifier">736</Field>
+          <Field Name="LI_Quantity" Type="lit_deliveredquantity">895.57</Field>
+          <Field Name="LI_UnitofMeasure" Type="lit_deliveredquantityunitcode">125</Field>
+          <Field Name="LI_UnitPrice" Type="lit_unitpriceamount">187.26</Field>
+          <Field Name="LI_VATValue" Type="lit_vatamount">884.09</Field>
+          <Field Name="LI_VATRate" Type="lit_vatrate">19%</Field>
+          <Field Name="LI_TotalValue" Type="lit_vatexcludedamount">432.12</Field>
+          <Field Name="LI_Description" Type="lit_articlename">Pen</Field>
+          <Field Name="LIT_VATCode" Type="lit_vatcode"></Field>
+          <Field Name="LI_DeliveryNote" Type="lit_deliverynote"></Field>
+          <Field Name="LI_Discount" Type="lit_discountamount">603.43</Field>
+        </TableRow>
+      </Table>
+      <Table Type="BankAccountTable" />
+      <Table Type="VATTable" />
+    </Tables>
+  </Invoice>
+  <System>
+    <Field Type="CreditInvoice">false</Field>
+    <Field Type="BatchId">9e621f302dd2462b9c0fa7f89bb41b0b</Field>
+    <Field Type="ExternalId">8596</Field>
+    <Field Type="CustomerExternalId">8596</Field>
+    <Field Type="BuyerExternalId"></Field>
+    <Field Type="OriginalFileName">8f77c7c24455cc5a7247ad44f55ce021.pdf</Field>
+    <Field Type="CustomerName">Test Customer</Field>
+    <Field Type="CreatedBy">Test User</Field>
+  </System>
+</Document>
